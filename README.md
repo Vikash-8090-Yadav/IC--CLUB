@@ -49,3 +49,55 @@ IC CLUBは、従来のプライベート投資ファンド市場で直面して�
 
 ### MOTOKO:
 スケーラブルなスマートコントラクトを構築することは、ハードな作業と献身が求められる困難な作業です。それにもかかわらず、私はそれを実現することができました。主な課題は、すべてのユーザーに対して動的かつ柔軟に対応できるコントラクトを作成することでした。例えば、ユーザーがコースを追加した場合、それはそのユーザーのダッシュボードにのみ表示され、他のログインしたユーザーには表示されないようにする必要がありました。
+
+
+## Code explanation 
+
+# Club Smart Contract Summary
+
+This code represents a smart contract for managing a finance club using Motoko on the Internet Computer platform. The contract includes functionalities for club management, proposals, voting, and member interactions.
+
+## Features
+
+### Authentication
+- **`whoami`**: Returns the caller's principal for authentication.
+
+### Club Management
+- **ClubInfo Type**: Contains `title` and `description` for club details.
+- **createClub**: Allows creation of a new club with a unique ID.
+- **GetClub**: Fetches club details by ID.
+
+### Proposal Management
+- **Proposol Type**: Contains `title`, `description`, `destination`, `Amount`, and `password`.
+- **createProposal**: Adds a new proposal with a unique ID.
+- **GetProposol**: Retrieves a proposal by ID.
+
+### Voting
+- **YesVote**: Increments the count for "Yes" votes.
+- **NOVote**: Increments the count for "No" votes.
+- **GetYesVote**: Queries the total "Yes" votes.
+- **GetNoVote**: Queries the total "No" votes.
+
+### Counters and Balances
+- **SetProposalCount** and **GetProposalCount**: Manage and retrieve the proposal count.
+- **SetMemberCount** and **GetMemberCount**: Manage and retrieve the member count.
+- **SetBalance** and **GetBalance**: Update and retrieve the club balance.
+
+### Status Management
+- **SetStatus**: Sets the status for a given ID.
+- **GetStatus**: Retrieves the status of a given ID.
+
+### Utility
+- **ClubId**: Returns the current club ID count.
+- **ProposalId**: Returns the current proposal ID count.
+
+## Data Storage
+- `HashMap` is used to store clubs, proposals, and statuses.
+- Stable variables ensure persistent storage across upgrades.
+
+## Key Variables
+- `postIdCount`: Tracks club IDs.
+- `proposolIdCount`: Tracks proposal IDs.
+- `YesVoteCount` and `NoVoteCount`: Track vote counts.
+- `ProposalCount`, `MemberCount`, and `Balance`: Maintain overall club metrics.
+
