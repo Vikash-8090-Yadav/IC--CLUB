@@ -53,51 +53,50 @@ IC CLUBは、従来のプライベート投資ファンド市場で直面して�
 
 ## Code explanation 
 
-# Club Smart Contract Summary
+# クラブスマートコントラクト概要
 
-This code represents a smart contract for managing a finance club using Motoko on the Internet Computer platform. The contract includes functionalities for club management, proposals, voting, and member interactions.
+このコードは、インターネットコンピュータプラットフォーム上でMotokoを使用して、金融クラブを管理するためのスマートコントラクトを表しています。このコントラクトは、クラブ管理、提案、投票、およびメンバーとのやり取りの機能を含みます。
 
-## Features
+## 機能
 
-### Authentication
-- **`whoami`**: Returns the caller's principal for authentication.
+### 認証
+- **`whoami`**: 呼び出し元のプリンシパルを返し、認証を行います。
 
-### Club Management
-- **ClubInfo Type**: Contains `title` and `description` for club details.
-- **createClub**: Allows creation of a new club with a unique ID.
-- **GetClub**: Fetches club details by ID.
+### クラブ管理
+- **ClubInfo タイプ**: クラブの詳細を含む `title` と `description` を保持します。
+- **createClub**: ユニークなIDで新しいクラブを作成します。
+- **GetClub**: IDによってクラブの詳細を取得します。
 
-### Proposal Management
-- **Proposol Type**: Contains `title`, `description`, `destination`, `Amount`, and `password`.
-- **createProposal**: Adds a new proposal with a unique ID.
-- **GetProposol**: Retrieves a proposal by ID.
+### 提案管理
+- **Proposol タイプ**: `title`、`description`、`destination`、`Amount`、`password` を含む提案の詳細を保持します。
+- **createProposal**: ユニークなIDで新しい提案を追加します。
+- **GetProposol**: IDによって提案を取得します。
 
-### Voting
-- **YesVote**: Increments the count for "Yes" votes.
-- **NOVote**: Increments the count for "No" votes.
-- **GetYesVote**: Queries the total "Yes" votes.
-- **GetNoVote**: Queries the total "No" votes.
+### 投票機能
+- **YesVote**: 「賛成」票のカウントを増やします。
+- **NOVote**: 「反対」票のカウントを増やします。
+- **GetYesVote**: 合計の「賛成」票を取得します。
+- **GetNoVote**: 合計の「反対」票を取得します。
 
-### Counters and Balances
-- **SetProposalCount** and **GetProposalCount**: Manage and retrieve the proposal count.
-- **SetMemberCount** and **GetMemberCount**: Manage and retrieve the member count.
-- **SetBalance** and **GetBalance**: Update and retrieve the club balance.
+### カウンターと残高
+- **SetProposalCount** と **GetProposalCount**: 提案のカウントを管理および取得します。
+- **SetMemberCount** と **GetMemberCount**: メンバーのカウントを管理および取得します。
+- **SetBalance** と **GetBalance**: クラブの残高を更新および取得します。
 
-### Status Management
-- **SetStatus**: Sets the status for a given ID.
-- **GetStatus**: Retrieves the status of a given ID.
+### ステータス管理
+- **SetStatus**: 指定されたIDのステータスを設定します。
+- **GetStatus**: 指定されたIDのステータスを取得します。
 
-### Utility
-- **ClubId**: Returns the current club ID count.
-- **ProposalId**: Returns the current proposal ID count.
+### ユーティリティ
+- **ClubId**: 現在のクラブIDカウントを返します。
+- **ProposalId**: 現在の提案IDカウントを返します。
 
-## Data Storage
-- `HashMap` is used to store clubs, proposals, and statuses.
-- Stable variables ensure persistent storage across upgrades.
+## データストレージ
+- `HashMap` を使用して、クラブ、提案、およびステータスを保存します。
+- ステーブル変数は、アップグレード間で永続的なストレージを確保します。
 
-## Key Variables
-- `postIdCount`: Tracks club IDs.
-- `proposolIdCount`: Tracks proposal IDs.
-- `YesVoteCount` and `NoVoteCount`: Track vote counts.
-- `ProposalCount`, `MemberCount`, and `Balance`: Maintain overall club metrics.
-
+## 主な変数
+- `postIdCount`: クラブIDを追跡します。
+- `proposolIdCount`: 提案IDを追跡します。
+- `YesVoteCount` と `NoVoteCount`: 投票数を追跡します。
+- `ProposalCount`、`MemberCount`、`Balance`: クラブ全体の指標を管理します。
