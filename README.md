@@ -7,6 +7,27 @@
 [IC-CLUB デモ動画を見る](https://youtu.be/eywGfajnK0c?si=hq13wCRUPuHzeKmm)
 
 
+### 	▶️ Experience the Live Site by Clicking the Link Below
+<br>
+<div align="center">
+  <table>
+    <tr>
+      <th>Deployed On</th>
+      <th>URL</th>
+    </tr>
+    <tr>
+      <td>ICP MAINNET</td>
+      <td>https://h7t4t-tyaaa-aaaap-abqka-cai.icp0.io
+      </td>
+    </tr>
+    <tr>
+      <td>ICP CANDID UI</td>
+      <td>https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=hkun6-sqaaa-aaaap-abqjq-cai
+</td>
+    </tr>
+    </table>
+</div>
+<br><br>
 
 
 # 💡紹介
