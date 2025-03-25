@@ -4,7 +4,7 @@
 [IC-CLUB プレゼンテーションを見る](https://www.canva.com/design/DAGCxGq-jw8/g15VJ9h4MGvkW-FIB7AyNQ/edit?utm_content=DAGCxGq-jw8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## デモ動画  
-[IC-CLUB デモ動画を見る](https://youtu.be/eywGfajnK0c?si=hq13wCRUPuHzeKmm)
+[IC-CLUB デモ動画を見る](https://youtu.be/iS0McRWXObk)
 
 
 ## Video: https://youtu.be/z4vAa_jubRY?si=D1mCEYCsOVZdx48r
