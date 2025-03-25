@@ -7,6 +7,8 @@
 [IC-CLUB デモ動画を見る](https://youtu.be/eywGfajnK0c?si=hq13wCRUPuHzeKmm)
 
 
+## Video: https://youtu.be/z4vAa_jubRY?si=D1mCEYCsOVZdx48r
+
 ### 	▶️ Experience the Live Site by Clicking the Link Below
 <br>
 <div align="center">
